@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.semester_project.smd_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.Add_Cataloges"></activity>
+        <activity android:name=".Activities.PasswordRecovery" />
+        <activity android:name=".Activities.UserVerification" />
+        <activity android:name=".Activities.SignUp" />
+        <activity android:name=".Activities.SignIn" />
+        <activity android:name=".Activities.PaymentSuccessful" />
+        <activity android:name="Fragments.Fragment_FeaturedCategories"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Activities.PaymentMethods" />
+        <activity android:name=".Activities.PayingbyCreditCard" />
+        <activity android:name=".Activities.TourGuideSelection" />
+        <activity android:name="Fragments.CreateTrip_Fragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Navigation" />
+        <activity android:name=".Activities.PayingbyCash" />
+        <activity android:name=".Activities.HomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
