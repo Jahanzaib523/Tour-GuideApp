@@ -1,61 +1,126 @@
 package com.semester_project.smd_project;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Guider_info {
+public class Guider_info
+{
     private String Name;
     private String Age;
-    //private Areas Areas;
-    private String Year;
+    private String Image;
+    private String phone;
+    private String address;
+    private String country;
     private String Price;
+    private String email;
+    private String budget;
+    private String experience;
 
-    public Guider_info(String name, String age/*, List<Areas> areas*/, String year, String price)
+    public Guider_info(String name, String age, String image, String year, String price, String email_, String phone_, String address_, String country_)
     {
-        this.Name = name;
-        this.Age = age;
-        //this.Areas = get_Areas();
-        this.Year = year;
-        this.Price = price;
+        Name = name;
+        Age = age;
+        Image = image;
+        experience = year;
+        Price = price;
+        email = email_;
+        phone = phone_;
+        address = address_;
+        country = country_;
     }
 
-    public void set_Areas(Areas area)
+    public Guider_info()
     {
-        //this.Areas= area;
+
     }
 
-    public void set_Year(String year)
-    {
-        this.Year = year;
+    @Override
+    public String toString() {
+        return "Guider_info{" +
+                "Name='" + Name + '\'' +
+                ", Age='" + Age + '\'' +
+                ", Image='" + Image + '\'' +
+                ", Price='" + Price + '\'' +
+                ", email='" + email + '\'' +
+                ", budget='" + budget + '\'' +
+                ", experience='" + experience + '\'' +
+                '}';
     }
 
-    public void set_Price(String price)
-    {
-        this.Price = price;
+    public String getPhone() {
+        return phone;
     }
 
-    public String get_Name()
-    {
-      return  this.Name;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String get_Age()
-    {
-      return this.Age;
+    public String getAddress() {
+        return address;
     }
 
-    /*public Areas get_Areas()
-    {
-        return this.Areas;
-    }*/
-
-    public String get_Year()
-    {
-        return this.Year;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public String get_Price()
-    {
-        return this.Price;
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getAge() {
+        return Age;
+    }
+
+    public void setAge(String age) {
+        Age = age;
+    }
+
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
+        Image = image;
+    }
+
+    public String getPrice() {
+        return Price;
+    }
+
+    public void setPrice(String price) {
+        Price = price;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getBudget() {
+        return budget;
+    }
+
+    public void setBudget(String budget) {
+        this.budget = budget;
+    }
+
+    public String getExperience() {
+        return experience;
+    }
+
+    public void setExperience(String experience) {
+        this.experience = experience;
     }
 }

@@ -1,12 +1,10 @@
 package com.semester_project.smd_project.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-
 import com.semester_project.smd_project.R;
 
 public class PaymentSuccessful extends AppCompatActivity {

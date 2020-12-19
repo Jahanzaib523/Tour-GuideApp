@@ -20,13 +20,19 @@
         >
     </item>
     <item
+        android:id="@+id/myorders"
+        android:title="My Orders"
+        android:icon="@drawable/orders"
+        >
+    </item>
+    <item
         android:id="@+id/wallet"
         android:title="Wallet"
         android:icon="@drawable/wallet_balance"
         >
     </item>
     <item
-        android:id="@+id/mytrips"
+        android:id="@+id/completedorders"
         android:title="My Trips"
         android:icon="@drawable/mytrips"
         >

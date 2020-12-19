@@ -1,16 +1,11 @@
 package Fragments;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-
 import android.app.DatePickerDialog;
-import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,23 +18,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.semester_project.smd_project.Activities.Add_Cataloges;
-import com.semester_project.smd_project.Activities.TourGuideSelection;
 import com.semester_project.smd_project.R;
-
-import java.text.DateFormat;
 import java.util.Calendar;
 
-import Pickers.DatePickerFragment;
-
-public class CreateTrip_Fragment extends Fragment implements DatePickerDialog.OnDateSetListener
+public class CreateTrip_Fragment extends Fragment
 {
-    EditText startdate;
+    TextView startdate;
     EditText enddate;
     Button tourguides;
+    DatePickerDialog.OnDateSetListener setListener;
+    DatePickerDialog.OnDateSetListener setListener1;
     String getdate;
     String flag = "End";
-
+    String USER;
     AutoCompleteTextView from, to;
     String [] strs = {"Islamabad", "Karachi", "Lahore", "Gujranwala", "Mianwali", "Daska", "Quetta", "Hyderabad", "Gilgit", "Muzzaffarabad"};
     ArrayAdapter<String> adpstr;
@@ -48,13 +41,18 @@ public class CreateTrip_Fragment extends Fragment implements DatePickerDialog.On
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         View root = inflater.inflate(R.layout.fragment_create_trip, container, false);
-        getActivity().setTitle("Create a trip");
-
         tourguides = root.findViewById(R.id.gotocataloge);
         startdate = root.findViewById(R.id.startdatetext);
         enddate = root.findViewById(R.id.enddatetext);
         from = root.findViewById(R.id.fromm);
         to = root.findViewById(R.id.too);
+
+        Calendar calendar = Calendar.getInstance();
+        final int year = calendar.get(Calendar.YEAR);
+        final int month = calendar.get(Calendar.MONTH);
+        final int day = calendar.get(Calendar.DATE);
+
+        USER = FirebaseAuth.getInstance().getCurrentUser().getEmail();
 
         adpstr = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_dropdown_item_1line, strs);
         from.setThreshold(1);
@@ -83,21 +81,34 @@ public class CreateTrip_Fragment extends Fragment implements DatePickerDialog.On
             @Override
             public void onClick(View v)
             {
-                DialogFragment datepickerstart = new DatePickerFragment();
-                datepickerstart.show(getActivity().getSupportFragmentManager(), "Date Picker");
-                String s = getdate;
-                startdate.setText(s);
+                DatePickerDialog datePickerDialog = new DatePickerDialog(getContext()/*, R.style.Theme_AppCompat_Dialog_MinWidth*/, setListener, year, month, day);
+                //datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                datePickerDialog.show();
             }
         });
 
+        setListener = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                month = month + 1;
+                String date = dayOfMonth + "/"+month+"/"+year;
+                startdate.setText(date);
+            }
+        };
+
         enddate.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                flag = "Start";
-                DialogFragment newFragment = new DatePickerFragment();
-                newFragment.show(getActivity().getSupportFragmentManager(), "DatePicker");
-                //enddate.setText(getdate);
+            public void onClick(View v) {
+                DatePickerDialog datePickerDialog = new DatePickerDialog(getContext()/*, R.style.Theme_AppCompat_Dialog_MinWidth*/, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                        month = month + 1;
+                        String date = dayOfMonth + "/" + month + "/" + year;
+                        enddate.setText(date);
+                    }
+                }, year, month, day);
+                //datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                datePickerDialog.show();
             }
         });
 
@@ -106,26 +117,23 @@ public class CreateTrip_Fragment extends Fragment implements DatePickerDialog.On
             @Override
             public void onClick(View v)
             {
-                Intent myIntent = new Intent(getContext(), Add_Cataloges.class);
-                startActivity(myIntent);
+                if(!from.getText().toString().isEmpty() && !to.getText().toString().isEmpty() && !startdate.getText().toString().isEmpty()
+                && !enddate.getText().toString().isEmpty())
+                {
+                    Intent myIntent = new Intent(getContext(), Add_Cataloges.class);
+                    myIntent.putExtra("Useremail_ID", USER);
+                    myIntent.putExtra("startlocation", from.getText().toString());
+                    myIntent.putExtra("endlocation", to.getText().toString());
+                    myIntent.putExtra("startdate", startdate.getText().toString());
+                    myIntent.putExtra("enddate", enddate.getText().toString());
+                    startActivity(myIntent);
+                }
+                else
+                {
+                    Toast.makeText(getContext(), "Fill all the fields!", Toast.LENGTH_LONG).show();
+                }
             }
         });
         return root;
-    }
-
-    @Override
-    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth)
-    {
-        populateSetDate(year, month + 1, dayOfMonth);
-    }
-
-    public void populateSetDate(int year, int month, int day) {
-
-        if(flag.equals("From")) {
-            startdate.setText(day + "/" + month + "/" + year);
-        }
-        else {
-            enddate.setText(day + "/" + month + "/" + year);
-        }
     }
 }

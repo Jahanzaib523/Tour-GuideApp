@@ -1,104 +1,212 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:id="@+id/box"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="50dp"
-    tools:context=".Activities.TourGuideSelection">
-
+    android:orientation="vertical"
+    android:layout_marginRight="35dp"
+    android:layout_marginLeft="35dp"
+    android:id="@+id/box">
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:id="@+id/l1"
         android:orientation="vertical"
-        android:layout_height="400dp"
-        android:background="#F5F5F5"
+        android:background="@drawable/cover"
+        android:padding="15dp"
         >
-
-        <RelativeLayout
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_marginTop="33dp"
-            android:orientation="vertical"
+            android:orientation="horizontal">
 
-            android:id="@+id/guidesid"
-            >
+
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="140dp"
-                android:layout_centerHorizontal="true"
-                android:layout_height="140dp"
-                android:src="@drawable/jahan"/>
-        </RelativeLayout>
+                android:id="@+id/guiderimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/jahan">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilepictureicon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/uploadprofilepicture"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:orientation="vertical"
-            android:layout_below="@+id/guidesid"
-            android:layout_marginVertical="30dp"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
 
-            android:layout_centerInParent="true"
-             >
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name:"
-                android:layout_marginHorizontal="50dp"
+                android:gravity="end"
+                android:layout_weight="1">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/camera_icon"
+                    android:id="@+id/editcoverphoto"
+                    android:layout_width="30dp"
+                    android:visibility="gone"
+                    android:layout_height="30dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/l1"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressbar2"
+                android:layout_width="28dp"
+                android:layout_height="31dp"
+                android:visibility="gone"
+                android:layout_gravity="center"></ProgressBar>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.4">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:id="@+id/name"
-                android:textStyle="bold"
-                android:textSize="15dp"
-               >
+                android:hint="User name"
+                android:padding="10dp"
+                android:gravity="bottom|top|center"
+                android:drawableLeft="@drawable/face"
+                android:background="@drawable/textviewrounded">
             </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.4">
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Age:"
-                android:layout_marginHorizontal="50dp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:textSize="15dp"
-                android:id="@+id/age"
-                >
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/email"
+                android:hint="Email"
+                android:padding="10dp"
+                android:gravity="bottom|top|center"
+                android:drawableLeft="@drawable/email"
+                android:background="@drawable/textviewrounded">
             </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.4"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/age"
+                    android:hint="Age"
+                    android:padding="10dp"
+                    android:gravity="bottom|top|center"
+                    android:drawableLeft="@drawable/profile"
+                    android:background="@drawable/textviewrounded">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="40dp">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/budget"
+                    android:hint="Budget"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:padding="10dp"
+                    android:gravity="bottom|top|center"
+                    android:drawableLeft="@drawable/budget"
+                    android:background="@drawable/textviewrounded">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.4">
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Areas:"
-                android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="50dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:hint="Experience"
+                android:id="@+id/experience"
+                android:gravity="bottom|top|center"
+                android:drawableLeft="@drawable/address"
+                android:background="@drawable/textviewrounded">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
                 android:id="@+id/area"
-                android:textStyle="bold"
-                android:textSize="15dp"
-               >
+                android:hint="Country/City/Town"
+                android:gravity="bottom|top|center"
+                android:drawableLeft="@drawable/country"
+                android:background="@drawable/textviewrounded">
             </TextView>
-            <TextView
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.4"
+            android:orientation="horizontal">
+
+            <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Experience:"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="50dp"
-                android:textSize="15dp"
-                android:id="@+id/experience">
-            </TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Full Day Tour:"
-                android:textSize="15dp"
-                android:id="@+id/price"
-                android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="50dp"
-                android:textStyle="bold"
-              >
-            </TextView>
-            <CheckBox
-                android:id="@+id/checkbox_meat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Select this tour guide"
-                android:layout_marginHorizontal="45dp"
-            />
+                android:layout_height="45dp"
+                android:text="Procceed"
+                android:id="@+id/proceedtopay"
+                android:textAllCaps="false"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/roundedbuttons_black">
+            </Button>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

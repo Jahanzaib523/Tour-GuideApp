@@ -9,18 +9,18 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:id="@+id/actionbar"
         >
         <LinearLayout
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_width="wrap_content"
-            android:layout_marginTop="26dp"
+            android:gravity="center"
             android:layout_marginLeft="10dp"
             >
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:id="@+id/barsid"
                 android:src="@drawable/back">
             </ImageView>
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:text="Safar"
                 android:textColor="#444444"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:fontFamily="casual">
             </TextView>
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:text="Customer"
                 android:textColor="#0096D6"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:fontFamily="casual">
             </TextView>
@@ -60,7 +60,7 @@
 
         <EditText
             android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:hint="Search"
             android:id="@+id/searchguide"
             android:gravity="center"
@@ -69,10 +69,21 @@
             android:padding="10dp"
             android:layout_marginRight="10dp">
         </EditText>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchguide">
+            <ProgressBar
+                android:id="@+id/progressbar7"
+                android:layout_width="28dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center">
+            </ProgressBar>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/me"
         android:layout_below="@+id/to">
         <androidx.recyclerview.widget.RecyclerView

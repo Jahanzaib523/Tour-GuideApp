@@ -3,25 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.semester_project.smd_project">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/tour_bus"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Add_Cataloges"></activity>
+        <activity android:name=".Activities.ForgotPasswordRecovery"></activity>
+        <activity android:name=".Activities.Create_UserProfile" />
+        <activity android:name=".Activities.Add_Cataloges" />
         <activity android:name=".Activities.PasswordRecovery" />
         <activity android:name=".Activities.UserVerification" />
         <activity android:name=".Activities.SignUp" />
         <activity android:name=".Activities.SignIn" />
         <activity android:name=".Activities.PaymentSuccessful" />
-        <activity android:name="Fragments.Fragment_FeaturedCategories"
-            tools:ignore="Instantiatable" />
         <activity android:name=".Activities.PaymentMethods" />
         <activity android:name=".Activities.PayingbyCreditCard" />
         <activity android:name=".Activities.TourGuideSelection" />
-        <activity android:name="Fragments.CreateTrip_Fragment"
+        <activity
+            android:name="Fragments.CreateTrip_Fragment"
             tools:ignore="Instantiatable" />
         <activity android:name=".Activities.MainActivity" />
         <activity android:name=".Navigation" />
