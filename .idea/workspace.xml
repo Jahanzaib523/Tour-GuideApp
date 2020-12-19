@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_3" />
+        <device id="pixel" />
+        <device id="pixel_3_xl" />
+        <device id="Nexus 5X" />
+        <device id="pixel_3a_xl" />
+        <device id="Nexus 6P" />
+        <device id="pixel_3a" />
+        <device id="pixel_2_xl" />
+        <device id="Nexus 6" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9fc37f04-21f1-47bb-9004-fe6ce7a724fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/Fragments/Fragment_CompletedOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/Fragments/Fragment_MyOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/Models/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/Models/TripInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/Models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/Models/Wallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/MyRecycleView/CompletedOrdersRecycleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/MyRecycleView/MyOrdersRecycleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/Create_UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/forgotpasswordrecovery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/budget.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/completedbtndrawable.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/cover_camera_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dollars.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/eye.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/face.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/from.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/invisible.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jahan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/orders.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/password.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/profile_camera_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/textviewblack.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/to.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tour_bus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_completedorders.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_trips_in_progress.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/order_box.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/order_box1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Fragments/CreateTrip_Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Fragments/CreateTrip_Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Fragments/Dashboard_Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Fragments/Dashboard_Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Fragments/Fragment_FeaturedCategories.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Fragments/Fragment_Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Fragments/Fragment_Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Fragments/Fragment_Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Fragments/Fragment_Setting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Fragments/Profile_Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Fragments/Profile_Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Fragments/TripHistoryFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Fragments/Wallet_Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Fragments/Wallet_Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/MyRecycleView/MyRvAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/MyRecycleView/MyRvAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/MyRecycleView/TripHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/MyRecycleView/TripHistoryRVAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/Add_Cataloges.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/Add_Cataloges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/PasswordRecovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/PasswordRecovery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/PayingbyCash.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/PayingbyCash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/PayingbyCreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/PayingbyCreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/PaymentMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/PaymentMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/PaymentSuccessful.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/PaymentSuccessful.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/TourGuideSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/TourGuideSelection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/UserVerification.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Activities/UserVerification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Areas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Areas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Guider_info.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Guider_info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/semester_project/smd_project/Navigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/jahan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add__cataloges.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add__cataloges.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_password_recovery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_password_recovery.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_paying_credicard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_paying_credicard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_payingby_cash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_payingby_cash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_payment_methods.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_payment_methods.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_payment_successful.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_payment_successful.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tourguideselection.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tourguideselection.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/box.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/box.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_create_trip.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_create_trip.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_featured_categories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_wallet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_wallet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/profile_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/profile_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/progressbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/progressbar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/triphistory_fragment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="MF8TZHGQFM5PSGRO" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j81enX6W4klrn2xcUbslBv9n2T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="memory.settings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-868276594">
+      <recent name="com.semester_project.smd_project.Activities" />
+      <recent name="Activities" />
+    </key>
+    <key name="android.template.1027733220">
+      <recent name="com.semester_project.smd_project.Activities" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Pickers" />
+      <recent name="com.semester_project.smd_project" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jahanzaib Manzoor\AndroidStudioProjects\CS440_SMD_SafarPk\UserView\app\src\main\res\drawable" />
+      <recent name="C:\Users\Jahanzaib Manzoor\AndroidStudioProjects\CS440_SMD_SafarPk\UserView\app\src\main\res\mipmap-anydpi-v26" />
+      <recent name="C:\Users\Jahanzaib Manzoor\AndroidStudioProjects\SMD_Project\app\src\main\res\drawable" />
+      <recent name="C:\Users\Jahanzaib Manzoor\AndroidStudioProjects\SMD_Project\app\src\main\res\navigation" />
+      <recent name="C:\Users\Jahanzaib Manzoor\AndroidStudioProjects\SMD_Project\app\src\main\res\layout" />
+    </key>
+    <key name="android.template.890432469">
+      <recent name="com.semester_project.smd_project" />
+    </key>
+    <key name="android.template.1302763511">
+      <recent name="com.semester_project.smd_project" />
+    </key>
+    <key name="android.template.1701727925">
+      <recent name="com.semester_project.smd_project" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.semester_project.smd_project" />
+    </key>
+    <key name="android.template.-1887425623">
+      <recent name="com.semester_project.smd_project" />
+    </key>
+    <key name="android.template.150221349">
+      <recent name="com.semester_project.smd_project.Activities" />
+    </key>
+    <key name="android.template.862062016">
+      <recent name="com.semester_project.smd_project.Activities" />
+    </key>
+    <key name="android.template.-1241949412">
+      <recent name="com.semester_project.smd_project" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fc37f04-21f1-47bb-9004-fe6ce7a724fd" name="Default Changelist" comment="" />
+      <created>1603171002083</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603171002083</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1607946931588">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1607946931588" />
+    <state x="372" y="358" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603466011659">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="372" y="358" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1603466011659" />
+    <state x="553" y="291" width="433" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603474248255">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="553" y="291" width="433" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1603474248255" />
+    <state x="566" y="312" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1603466013757">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="566" y="312" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.864@0.0.1536.864" timestamp="1603466013757" />
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608067748031">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1608067748031" />
+    <state x="499" y="179" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1603474796636">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="179" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.864@0.0.1536.864" timestamp="1603474796636" />
+    <state x="349" y="187" key="AndroidCreateResourceDirectoryDialog" timestamp="1603172963842">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="349" y="187" key="AndroidCreateResourceDirectoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1603172963842" />
+    <state x="349" y="187" key="AndroidCreateResourceFileDialog" timestamp="1607822428636">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="349" y="187" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1607822428636" />
+    <state x="854" y="258" key="FileChooserDialogImpl" timestamp="1608181969319">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="854" y="258" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1608181969319" />
+    <state width="1491" height="2" key="GridCell.Tab.0.bottom" timestamp="1608075663622">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="2" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608075663622" />
+    <state width="1491" height="2" key="GridCell.Tab.0.center" timestamp="1608075663621">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="2" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1608075663621" />
+    <state width="1491" height="2" key="GridCell.Tab.0.left" timestamp="1608075663621">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="2" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1608075663621" />
+    <state width="1491" height="2" key="GridCell.Tab.0.right" timestamp="1608075663621">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="2" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1608075663621" />
+    <state x="584" y="210" key="chooseDestDirectoryDialog" timestamp="1603636328134">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="584" y="210" key="chooseDestDirectoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1603636328134" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1608181894734">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1608181894734" />
+    <state x="419" y="52" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603543024435">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="419" y="52" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864@0.0.1536.864" timestamp="1603543024435" />
+    <state x="426" y="199" key="run.anything.popup" timestamp="1607625445334">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="426" y="199" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1607625445334" />
+    <state x="426" y="89" width="672" height="676" key="search.everywhere.popup" timestamp="1607340115945">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="426" y="89" width="672" height="676" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1607340115945" />
+  </component>
+</project>
